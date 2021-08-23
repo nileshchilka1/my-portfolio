@@ -1308,8 +1308,8 @@ body.active{
   border-radius: 50px;
   right: 15px;
   bottom: 70px;
-  background:black;
-  color: #fff;
+  background:white;
+  color: black;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
 }
@@ -1328,8 +1328,8 @@ body.active{
 }
 
 .back-to.active{
-  background: white;
-  color: black;
+  background: black;
+  color: white;
 }
 
 
