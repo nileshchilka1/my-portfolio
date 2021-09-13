@@ -196,7 +196,7 @@
 
 })(jQuery);
 
-$( "#hii" ).on( "load", function() {
+$( "#hii" ).on( "click", function() {
 
   $("#hero,#header,body,#hero h1,#hero i,#hero p,#hero p span,#skills h2,#skills span,#skills h3,.services .icon-box,.services h4 a,.services p,#resume p,#about p, #about h4,.back-to,.skills .progress-bar-wrap,.portfolio .portfolio-wrap,.portfolio .portfolio-wrap .portfolio-links a,.portfolio .portfolio-wrap .portfolio-info h4,.portfolio-details,#about h2,#resume h2,#portfolio h2,#services h2").toggleClass("active");
   
