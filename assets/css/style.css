@@ -11,6 +11,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+  background-color: #121212;
 }
 a {
   color: #0563bb;
@@ -128,8 +129,8 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 992px) {
   #header {
     width: 300px;
-    background: #fff;
-    border-right: 1px solid #e6e9ec;
+    background: #121212;
+    border-right: 1px solid #121212;
     left: -300px;
   }
   #header.active{
@@ -265,7 +266,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.8);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -289,7 +290,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero p span {
-  color: #0563bb;
+  color: #ff6363;
   letter-spacing: 1px;
 }
 
@@ -317,11 +318,15 @@ h1, h2, h3, h4, h5, h6 {
   #hero h1 {
     font-size: 32px;
     line-height: 36px;
+    margin: 0;
+    font-weight: 700;
+    color:#ececec;
   }
   #hero p {
     margin-top: 10px;
     font-size: 20px;
     line-height: 24px;
+    color: #ececec;
   }
   #hero.active {
     text-align: center;
@@ -410,6 +415,18 @@ section {
   color: #0563bb;
 }
 
+#about h4{
+  color: #ececec;
+}
+#about p{
+  color: #ececec;
+}
+
+#about h2{
+  color: #847fca;
+  
+}
+
 .about .content p:last-child {
   margin-bottom: 0;
 }
@@ -481,7 +498,7 @@ section {
 }
 
 .skills .progress-bar-wrap {
-  background: #f2f3f5;
+  background: #272829;
 }
 
 .skills .progress-bar {
@@ -489,6 +506,22 @@ section {
   height: 10px;
   transition: .9s;
   background-color: #0563bb;
+}
+
+#skills h3 {
+  color:#ecececb2 ;
+
+}
+#skills h2 {
+  color: #847fca;
+  
+}
+
+#skills span{
+  color: #ececec;
+}
+.skills .progress-bar-wrap {
+  background: #272829;
 }
 
 /*--------------------------------------------------------------
@@ -552,6 +585,15 @@ section {
   border: 2px solid #0563bb;
 }
 
+#resume h2 {
+  color: #847fca;
+  
+}
+
+#resume p {
+  color:  #ececec;
+}
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -600,7 +642,7 @@ section {
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.7);
+  background-color: rgba(8, 8, 8, 0.6);
   position: absolute;
   left: 30px;
   right: 30px;
@@ -657,7 +699,7 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: #45505b;
+  color: #ececec;
   font-weight: 600;
 }
 
@@ -675,7 +717,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #45505b;
+  color: #ececec;
   margin: 0 2px;
   font-size: 28px;
   display: inline-block;
@@ -715,8 +757,8 @@ section {
   text-align: center;
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
-  background: #fff;
-  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
+  background: #121212;
+  box-shadow: 5px 5px 5px 5px #121212;
 }
 
 .services .icon-box .icon {
@@ -765,8 +807,20 @@ section {
 }
 
 .services .icon-box:hover {
-  border-color: #fff;
-  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+  border-color: #121212;
+  box-shadow: 0px 0 35px 0 rgba(255, 255, 255, 0.08);
+}
+
+.services h4 a{
+  color: #ececec;
+}
+.services p{
+  color: #ececec;
+}
+
+.services h2{
+  color: #847fca;
+  
 }
 
 .services .iconbox-blue i {
@@ -1097,7 +1151,7 @@ section {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #ddd ;
+  background-color: #0563bb !important;
 }
 
 .portfolio-details .portfolio-details-carousel .owl-dot.active {
@@ -1247,6 +1301,11 @@ body.active{
   color: #ececec;
 }
 
+#about h2.active{
+  color: #847fca;
+  
+}
+
 
 /* skills section */
 #skills span.active{
@@ -1308,8 +1367,8 @@ body.active{
   border-radius: 50px;
   right: 15px;
   bottom: 70px;
-  background:black;
-  color: #fff;
+  background: white;
+  color: black;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
 }
@@ -1341,10 +1400,7 @@ body.active{
   color: #847fca;
   
 }
-#about h2.active{
-  color: #847fca;
-  
-}
+
 #resume h2.active{
   color: #847fca;
   
@@ -1354,6 +1410,11 @@ body.active{
   
 }
 #services h2.active{
+  color: #847fca;
+  
+}
+
+#portfolio h2{
   color: #847fca;
   
 }
