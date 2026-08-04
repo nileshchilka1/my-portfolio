@@ -1,9 +1,7 @@
 /**
-* Template Name: MyResume - v2.2.0
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+ * Nilesh Chilka Portfolio — Main JS
+ * Clean version: permanent dark theme, no toggle logic
+ */
 !(function($) {
   "use strict";
 
@@ -19,12 +17,12 @@
   // Hero typed
   if ($('.typed').length) {
     var typed_strings = $(".typed").data('typed-items');
-    typed_strings = typed_strings.split(',')
+    typed_strings = typed_strings.split(',');
     new Typed('.typed', {
       strings: typed_strings,
       loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
+      typeSpeed: 80,
+      backSpeed: 40,
       backDelay: 2000
     });
   }
@@ -69,6 +67,7 @@
     }
   });
 
+  // Mobile nav toggle
   $(document).on('click', '.mobile-nav-toggle', function(e) {
     $('body').toggleClass('mobile-nav-active');
     $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
@@ -123,15 +122,13 @@
     return false;
   });
 
-
-
   // jQuery counterUp
   $('[data-toggle="counter-up"]').counterUp({
     delay: 10,
     time: 1000
   });
 
-  // Skills section
+  // Skills section (waypoints)
   $('.skills-content').waypoint(function() {
     $('.progress .progress-bar').each(function() {
       $(this).css("width", $(this).attr("aria-valuenow") + '%');
@@ -148,7 +145,7 @@
     });
   }
 
-  // Porfolio isotope and filter
+  // Portfolio isotope and filter
   $(window).on('load', function() {
     var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item'
@@ -164,17 +161,16 @@
       aos_init();
     });
 
-    // Initiate venobox (lightbox feature used in portofilo)
+    // Initiate venobox (lightbox feature)
     $('.venobox').venobox({
       'share': false
     });
 
-    // Initiate aos_init() function
+    // Initiate AOS
     aos_init();
-
   });
 
-  // Testimonials carousel (uses the Owl Carousel library)
+  // Testimonials carousel
   $(".testimonials-carousel").owlCarousel({
     autoplay: true,
     dots: true,
@@ -190,14 +186,4 @@
     items: 1
   });
 
-  // $( "#hii" ).on( "click", function() {
-  //   $(".portfolio-details").toggleClass("active");
-  // }
-
 })(jQuery);
-
-$( "#hii" ).on( "click", function() {
-
-  $("#hero,#header,body,#hero h1,#hero i,#hero p,#hero p span,#skills h2,#skills span,#skills h3,.services .icon-box,.services h4 a,.services p,#resume p,#about p, #about h4,.back-to,.skills .progress-bar-wrap,.portfolio .portfolio-wrap,.portfolio .portfolio-wrap .portfolio-links a,.portfolio .portfolio-wrap .portfolio-info h4,.portfolio-details,#about h2,#resume h2,#portfolio h2,#services h2").toggleClass("active");
-  
-});
